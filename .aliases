@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# A collection of useful bash aliases and functions
+
+# Directory Stats
+# Lists the size of the files in the current directory
+alias dirstat="sudo du -Pshx ./* 2>/dev/null | sort -hr"
