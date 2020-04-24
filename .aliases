@@ -1,10 +1,13 @@
 #!/bin/bash
 
-# A collection of useful bash aliases and functions
+# A collection of useful shell aliases and functions
 
 # Directory Stats
 # Lists the size of the files in the current directory
-alias dirstat="sudo du -Pshx ./* 2>/dev/null | sort -hr"
+# eg. cd ~; dirstat
+function dirstat(){
+    sudo du -Pshx ./* 2>/dev/null | sort -hr
+}
 
 # Date Stamp
 # Create a datestamp for files and folders
