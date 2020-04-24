@@ -10,5 +10,5 @@ alias dirstat="sudo du -Pshx ./* 2>/dev/null | sort -hr"
 # Create a datestamp for files and folders
 # eg. tar -czvf $(FDS)_website_backup.tar.gz ~/website
 function FDS(){
- echo $(date +"%Y%m%d%H%S")
+    echo $(date +"%Y%m%d%H%S")
 }
