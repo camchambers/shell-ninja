@@ -5,3 +5,10 @@
 # Directory Stats
 # Lists the size of the files in the current directory
 alias dirstat="sudo du -Pshx ./* 2>/dev/null | sort -hr"
+
+# Date Stamp
+# Create a datestamp for files and folders
+# eg. tar -czvf $(FDS)_website_backup.tar.gz ~/website
+function FDS(){
+ echo $(date +"%Y%m%d%H%S")
+}
