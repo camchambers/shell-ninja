@@ -2,11 +2,18 @@
 
 # A collection of useful shell aliases and functions
 
+# Rhino Grep
+# Searches files given a keyword and shows file match and line number
+# eg. rgrep password
+function rgrep(){
+    grep -rHino $1 .    
+} 
+
 # Directory Stats
 # Lists the size of the files in the current directory
 # eg. cd ~; dirstat
 function dirstat(){
-    sudo du -Pshx ./* 2>/dev/null | sort -hr
+    du -Pshx ./* 2>/dev/null | sort -hr
 }
 
 # Date Stamp
