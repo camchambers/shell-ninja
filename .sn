@@ -19,7 +19,7 @@ function dirstat(){
 # Date Stamp
 # Create a datestamp for files and folders
 # eg. tar -czvf $(FDS)_website_backup.tar.gz ~/website
-function FDS(){
+function fds(){
     echo $(date +"%Y%m%d%H%S")
 }
 
