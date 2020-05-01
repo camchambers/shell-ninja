@@ -22,3 +22,10 @@ function dirstat(){
 function FDS(){
     echo $(date +"%Y%m%d%H%S")
 }
+
+# IP Tally
+# Searches a file for IP addresses and tallies IPs according to frequency
+# eg. iptally maillog
+function iptally(){
+    grep -o "[0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\+" $1 | sort | uniq -c | sort -n -r
+}
