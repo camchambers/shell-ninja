@@ -23,6 +23,12 @@ function fds(){
     echo $(date +"%Y%m%d%H%S")
 }
 
+# Number grep
+# Searches a file for all occurances of numbers
+function numgrep(){
+    grep -Eo [0-9]* $1
+}
+
 # IP Tally
 # Searches a file for IP addresses and tallies IPs according to frequency
 # eg. iptally maillog
