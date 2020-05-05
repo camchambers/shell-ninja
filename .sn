@@ -29,3 +29,7 @@ function fds(){
 function iptally(){
     grep -o "[0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\+" $1 | sort | uniq -c | sort -n -r
 }
+
+# Sorry
+# Run last command as sudo
+alias sorry="sudo !!"
