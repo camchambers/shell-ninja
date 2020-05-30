@@ -12,11 +12,11 @@ git clone git@github.com:camchambers/shell-ninja.git
 2. Source the script from your shell profile
 
 ```bash
-# Bash Example
+# Bash
 echo "source ~/shell-ninja/.sn" >> ~/.bash_profile
 ```
 
 ```bash
-# Zsh Example
+# Zsh
 echo "source ~/shell-ninja/.sn" >> ~/.zshenv
 ```
