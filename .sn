@@ -16,6 +16,13 @@ function dirstat(){
     du -Pshx ./* 2>/dev/null | sort -hr
 }
 
+# Chmod Val
+# Get the numeric chmod value for a file or directory
+function chmodval(){
+    # stat --format '%a' $1. # for BSD/OS X
+    stat -f "%OLp" $1
+}
+
 # Date Stamp
 # Create a datestamp for files and folders
 # eg. tar -czvf $(FDS)_website_backup.tar.gz ~/website
