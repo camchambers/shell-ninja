@@ -3,6 +3,8 @@ A collection of custom shell commands and functions that I have collected and cr
 
 # Installation
 
+Copy and paste select functions into your shell profile or include all of the functions as follows:
+
 1. Clone the repo (ie. into your home directory)
 ```bash
 cd ~
