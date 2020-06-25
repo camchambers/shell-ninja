@@ -19,6 +19,13 @@ function rgrep(){
     grep -rHino $1 .    
 } 
 
+# File list by type
+# Searces the current directory for all files and list number of occurances
+# by file type
+function flt(){
+    find . -type f | sed 's/.*\.//' | sort | uniq -c
+}
+
 # Directory Stats
 # Lists the size of the files in the current directory
 # eg. cd ~; dirstat
