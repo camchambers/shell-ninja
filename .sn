@@ -2,6 +2,16 @@
 
 # A collection of useful shell aliases and functions
 
+# Password generator
+# Generates a random password using openssl
+function pswrd(){
+    openssl rand -base64 32
+} 
+
+# Sorry
+# Run last command as sudo
+alias sorry="sudo !!"
+
 # Rhino Grep
 # Searches files given a keyword and shows file match and line number
 # eg. rgrep password
@@ -42,7 +52,3 @@ function numgrep(){
 function iptally(){
     grep -o "[0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\+" $1 | sort | uniq -c | sort -n -r
 }
-
-# Sorry
-# Run last command as sudo
-alias sorry="sudo !!"
