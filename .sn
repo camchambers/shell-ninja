@@ -59,3 +59,8 @@ function numgrep(){
 function iptally(){
     grep -o "[0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\+" $1 | sort | uniq -c | sort -n -r
 }
+
+# Shows the full path to a file
+function realpath(){
+    echo $(pwd)/$1
+}
